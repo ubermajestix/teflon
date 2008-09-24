@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: New Album Coming Soon!
+  body: New album is going to drop in the next few weeks. Signup to recieve an email or text when it drops!!!
+  user_id: 1
+
+two:
+  title: THE TRUTH HURTS IF U FEEL GOOD BEIN FAKE!!~TEF n FLY MAGAZINE!
+  body: Catch the music at itunes.com & cdbaby.com type in (Tef), kingtef.com or www.myspace.com/kingtef! ****Very Important******** (Hate mail) (Sorry to all the my fans and loved ones who have to read this, i love yall more than anything, i jus gotta respond to some extra hate mail i received b4 i give yall my lil Tef list below to laugh about) Much Luv & Respect Always
+  user_id: 1

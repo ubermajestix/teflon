@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Teflon | <%= controller.controller_name.titlecase %> | <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'scaffold' %>
+ <%= javascript_include_tag :defaults %>
+<%= unobtrusive_datepicker_includes %>
+</head>
+<body>
+<div id="internal_nav">
+<%= link_to "news", news_index_path %> | 
+<%= link_to "blog", posts_path %> | 
+<%= link_to "videos", videos_path %> | 
+<%= link_to "shows", shows_path %>
+</div>
+<%= render :partial => 'layouts/flash_notice' %>
+
+
+<%= yield  %>
+
+</body>
+</html>

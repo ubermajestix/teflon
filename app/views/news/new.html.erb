@@ -1,0 +1,20 @@
+<h1>New news</h1>
+<%= error_messages_for :news %>
+<% form_for(:news, @news, :url =>{:action=>:create}, :html => {:method => "post"} ) do |f| %>
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <b>Body</b><br />
+    <%= f.text_area :body %>
+  </p>
+
+  <p>
+
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', news_index_path %>

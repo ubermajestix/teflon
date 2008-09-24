@@ -1,0 +1,25 @@
+<% if flash[:notice] %>
+  <span id="flash_notice"><%= flash[:notice] %></span>
+  <script type="text/javascript" charset="utf-8">
+    /*colorize the notice based on contents:
+      if it's an error (the word "error" is in there), make the text red and fade from yellow
+      if it's not an error, leave the text green and fade from a different shade of green (green means go! ;) )
+    */
+    Event.observe(document, 'dom:loaded', function() {
+      var fn = $('flash_notice');
+      var options = {"startcolor": "#33cc33"}; /*33cc33 is a shade of green different form the font color*/
+      if (fn.innerHTML.match(/[Ee]rror/)) {
+        options["startcolor"] = "#ffff22"; /*bright-ish yellow*/
+        fn.style.color = "red";
+		fn.style.border = "1px red solid"
+		fn.style.background = "#F99"
+      }
+	 else{
+		 fn.style.color = "green";
+		 fn.style.border = "1px green solid"
+	     fn.style.background = "#9F9"
+	}
+      fn.show().highlight(options);
+    });
+  </script>  
+<%- end %>

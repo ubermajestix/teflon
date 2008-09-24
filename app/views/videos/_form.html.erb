@@ -1,0 +1,20 @@
+<%= error_messages_for :video %>
+
+<% form_for @video do |f| %>
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <b>embed code from YouTube</b><br />
+    <%= f.text_area :embed %>
+  </p>
+
+  <p>
+
+    <%= f.submit new_or_create? ? "Create" : "Edit" %>
+  </p>
+<%= textile_editor_initialize -%>
+<% end %>
+

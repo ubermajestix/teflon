@@ -1,0 +1,8 @@
+<%for video in @videos %>
+	<%= video.title %> <br/>
+	<%= video.embed %> <br/>
+	added by: <%= video.user.login %> at <%= nice_time video.created_at %><br/>
+	<%= link_to 'edit', edit_video_path(video) %>
+ <%= link_to 'remove', video, :confirm => 'Are you sure?', :method => :delete %>
+	<hr/>
+<%end%>

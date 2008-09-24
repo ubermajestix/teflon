@@ -1,0 +1,12 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: Teflon 2nite be at the Blue Bird 
+  user_id: 2
+  body: Teflon 2nite be at the Blue Bird theater in Denver to see the King perform. Doors open at 7!!! Holla back Much Luv ~King t
+  created_at:                <%= 5.days.ago.to_s :db  %>
+two:
+  title: www.myspace.com/kingtef
+  user_id: 2
+  body: U can now listen to my music on this page or www.myspace.com/kingtef
+  created_at:                <%= 10.days.ago.to_s :db  %>

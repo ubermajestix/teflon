@@ -1,0 +1,6 @@
+<h1>News</h1>
+<% for news in @news %>
+	<%= render :partial => 'news/news', :object=>news %>
+<% end %>
+<br />
+<%= link_to 'New news', new_news_path %>

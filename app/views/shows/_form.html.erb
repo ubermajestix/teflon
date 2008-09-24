@@ -1,0 +1,36 @@
+<%= error_messages_for :news %>
+
+<% form_for @show do |f| %>
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <b>Details</b><br />
+    <%= textile_editor :show, :body %>
+  </p>
+
+ <p>
+    <b>showtime</b><br />
+    <%= f.unobtrusive_datetime_picker :showtime %>
+  </p>
+
+  <p>
+    <b>Ticket Price</b><br />
+    $<%= f.text_field :ticket_price, :size=>5 %>
+  </p>
+
+  <p>
+    <b>Venue, City, State</b><br/>
+    <%= f.text_field :venue %><br/>	
+    <%= f.text_field :city %> <%=  f.state_select :state, country='US_POSTAL_CODES', options = {}, html_options = {}   %>
+  </p>
+
+
+  <p>
+
+    <%= f.submit new_or_create? ? "Create" : "Edit" %>
+  </p>
+<%= textile_editor_initialize -%>
+<% end %>

@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Teflon</title>
+	  <%= stylesheet_link_tag 'scaffold' %>
+	 <%= javascript_include_tag :defaults %>
+	<%= unobtrusive_datepicker_includes %>
+</head>
+<body>
+	<div style="width:100%; height:25px; background:#000; color:#0CF">login header</div>
+	<br/><br/>
+	<div id="content">
+		<div id="logo" style="float:left">
+			logo
+		</div>
+		
+		<div id="banner" style="float:right">
+			banner
+		</div>
+		
+		<div style="clear:both">
+			
+		</div>
+		<%= yield %>
+	</div>
+	
+</body>
+</html>

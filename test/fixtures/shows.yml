@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: KingTef @ The Bluebird
+  body: appearing at the bluebird with some other people omg omg this is going to be hot
+  user_id: 1
+  ticket_price: 15.00
+  city: Denver
+  state: CO
+  venue: The Bluebird
+
+two:
+  title: The Loft 2 hawt wednesdays!
+  body: weekly appearance boom bitches!
+  user_id: 2
+  ticket_price: 25.00
+  city: Denver
+  state: CO
+  venue: The Loft

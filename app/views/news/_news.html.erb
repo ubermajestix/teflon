@@ -1,0 +1,6 @@
+<b><%= news.title %></b><br/>
+<i>by: <%= news.user.login if news.user_id %> on <%=nice_time news.updated_at %> </i><br/>
+<%= news.body_html %><br/>
+<%= link_to 'Edit', edit_news_path(news) %>
+<%= link_to 'Destroy', news, :confirm => 'Are you sure?', :method => :delete %>
+<hr/>

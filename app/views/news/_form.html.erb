@@ -1,0 +1,19 @@
+<%= error_messages_for :news %>
+
+<% form_for @news do |f| %>
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <b>Body</b><br />
+    <%= textile_editor :news, :body %>
+  </p>
+
+  <p>
+
+    <%= f.submit new_or_create? ? "Create" : "Edit" %>
+  </p>
+<%= textile_editor_initialize -%>
+<% end %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: T.I.L.T.
+  user_id: 1
+  embed: "<object width=\"425\" height=\"349\"><param name=\"movie\" value=\"http://www.youtube.com/v/fnueD1n0oWg&rel=0&border=1&color1=0x2b405b&color2=0x6b8ab6&hl=en&fs=1\"></param><param name=\"allowFullScreen\" value=\"true\"></param><embed src=\"http://www.youtube.com/v/fnueD1n0oWg&rel=0&border=1&color1=0x2b405b&color2=0x6b8ab6&hl=en&fs=1\" type=\"application/x-shockwave-flash\" allowfullscreen=\"true\" width=\"425\" height=\"349\"></embed></object>"
+
+two:
+  title: Secret
+  user_id: 2
+  embed: "<object width=\"425\" height=\"349\"><param name=\"movie\" value=\"http://www.youtube.com/v/CPXKw-URy_0&rel=0&border=1&color1=0x5d1719&color2=0xcd311b&hl=en&fs=1\"></param><param name=\"allowFullScreen\" value=\"true\"></param><embed src=\"http://www.youtube.com/v/CPXKw-URy_0&rel=0&border=1&color1=0x5d1719&color2=0xcd311b&hl=en&fs=1\" type=\"application/x-shockwave-flash\" allowfullscreen=\"true\" width=\"425\" height=\"349\"></embed></object>"
